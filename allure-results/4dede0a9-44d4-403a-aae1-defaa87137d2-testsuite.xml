@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629875368493' stop='1629875400457'>
+    <name>verify generate-download-share funtion verify project tab</name>
+    <title>verify generate-download-share funtion verify project tab</title>
+    <test-cases>
+        <test-case start='1629875368493' status='passed' stop='1629875382683'>
+            <name>Generate-new-dataset.</name>
+            <title>Generate-new-dataset.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629875382683' status='passed' stop='1629875392349'>
+            <name>Download project.</name>
+            <title>Download project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629875392350' status='passed' stop='1629875395208'>
+            <name>Share project.</name>
+            <title>Share project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629875395208' status='passed' stop='1629875397773'>
+            <name>Share numeric project.</name>
+            <title>Share numeric project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629875397773' status='passed' stop='1629875400456'>
+            <name>Share log project.</name>
+            <title>Share log project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

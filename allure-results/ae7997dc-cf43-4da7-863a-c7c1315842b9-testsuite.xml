@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629253546789' stop='1629253852396'>
+    <name>edit project info on projects page..</name>
+    <title>edit project info on projects page..</title>
+    <test-cases>
+        <test-case start='1629253546930' status='passed' stop='1629253552242'>
+            <name>Should edit text al project successfully.</name>
+            <title>Should edit text al project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629253552242' status='failed' stop='1629253852390'>
+            <name>Should edit log project successfully.</name>
+            <title>Should edit log project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='ea1aa5e1-a9d1-4b1e-bdd2-e854d2bbf55b-attachment.png' type='image/png' size='58654'/>
+                <attachment title='Screenshot' source='1d6c0460-9783-4fc8-ae36-b11b7773660e-attachment.png' type='image/png' size='58654'/>
+            </attachments>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.</message>
+                <stack-trace>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
+                    at Timeout._onTimeout (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4281:23)
+                    at listOnTimeout (internal/timers.js:554:17)
+                    at processTimers (internal/timers.js:497:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

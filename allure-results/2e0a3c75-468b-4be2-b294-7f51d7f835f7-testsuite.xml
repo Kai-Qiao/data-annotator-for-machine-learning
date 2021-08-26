@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629872863657' stop='1629872966407'>
+    <name>Create new project </name>
+    <title>Create new project </title>
+    <test-cases>
+        <test-case start='1629872864616' status='failed' stop='1629872965616'>
+            <name>Should create new tabular numeric labels project successfully.</name>
+            <title>Should create new tabular numeric labels project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='99a47b8b-bf26-4034-bb7b-0e3075b4534a-attachment.png' type='image/png' size='54276'/>
+            </attachments>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.</message>
+                <stack-trace>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
+                    at Timeout._onTimeout (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4281:23)
+                    at listOnTimeout (node:internal/timers:557:17)
+                    at processTimers (node:internal/timers:500:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

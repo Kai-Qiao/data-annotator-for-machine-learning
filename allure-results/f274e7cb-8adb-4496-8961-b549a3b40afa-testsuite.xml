@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629275723853' stop='1629275776031'>
+    <name>Create new project </name>
+    <title>Create new project </title>
+    <test-cases>
+        <test-case start='1629275723977' status='failed' stop='1629275775905'>
+            <name>Should create log project successfully.</name>
+            <title>Should create log project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='dbee2e93-a268-4ad8-b5d5-64579bd5c024-attachment.png' type='image/png' size='53032'/>
+                <attachment title='Screenshot' source='ed32e069-f093-4347-9f26-6a478f4dcca2-attachment.png' type='image/png' size='53032'/>
+            </attachments>
+            <failure>
+                <message>the data source should same as the user uploaded file</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\creat-log-project-spec.ts:70:10)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

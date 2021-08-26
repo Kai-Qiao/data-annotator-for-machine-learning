@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629279078614' stop='1629279094030'>
+    <name>verify basic project append funtion</name>
+    <title>verify basic project append funtion</title>
+    <test-cases>
+        <test-case start='1629279078614' status='passed' stop='1629279081255'>
+            <name>Qick append verify add new line</name>
+            <title>Qick append verify add new line</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629279081255' status='passed' stop='1629279082497'>
+            <name>Qick append verify delete new line</name>
+            <title>Qick append verify delete new line</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629279082498' status='passed' stop='1629279086077'>
+            <name>Qick append verify publish</name>
+            <title>Qick append verify publish</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629279086077' status='passed' stop='1629279094029'>
+            <name>File append verify selete existing file</name>
+            <title>File append verify selete existing file</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

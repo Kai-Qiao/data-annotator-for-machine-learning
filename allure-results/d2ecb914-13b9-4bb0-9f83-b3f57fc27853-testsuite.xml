@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629889263709' stop='1629889280428'>
+    <name>verify log project append funtion</name>
+    <title>verify log project append funtion</title>
+    <test-cases>
+        <test-case start='1629889263709' status='passed' stop='1629889266538'>
+            <name>Qick append verify add new line</name>
+            <title>Qick append verify add new line</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629889266538' status='passed' stop='1629889267831'>
+            <name>Qick append verify delete new line</name>
+            <title>Qick append verify delete new line</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629889267831' status='passed' stop='1629889272199'>
+            <name>Qick append verify upload sigle log file and publish</name>
+            <title>Qick append verify upload sigle log file and publish</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629889272199' status='passed' stop='1629889280427'>
+            <name>File append verify selete existing log file</name>
+            <title>File append verify selete existing log file</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

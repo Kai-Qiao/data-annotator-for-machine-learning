@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629886410431' stop='1629886427803'>
+    <name>upload new dataset on myDatasets page..</name>
+    <title>upload new dataset on myDatasets page..</title>
+    <test-cases>
+        <test-case start='1629886410431' status='passed' stop='1629886416706'>
+            <name>clear old e2e projects</name>
+            <title>clear old e2e projects</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629886416706' status='failed' stop='1629886427799'>
+            <name>clear old e2e dataset</name>
+            <title>clear old e2e dataset</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='a5ec1b75-a078-40b5-8db4-fbc706879c01-attachment.png' type='image/png' size='57429'/>
+            </attachments>
+            <failure>
+                <message>Expected 3 to equal 0.</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\clear-old-e2e-projects-datasets-spec.ts:46:59)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

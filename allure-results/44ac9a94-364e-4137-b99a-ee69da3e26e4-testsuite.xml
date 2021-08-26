@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629876216594' stop='1629876250159'>
+    <name>verify generate-download-share funtion verify project tab</name>
+    <title>verify generate-download-share funtion verify project tab</title>
+    <test-cases>
+        <test-case start='1629876216594' status='passed' stop='1629876229950'>
+            <name>Generate-new-dataset.</name>
+            <title>Generate-new-dataset.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629876229950' status='passed' stop='1629876239706'>
+            <name>Download project.</name>
+            <title>Download project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629876239707' status='passed' stop='1629876243726'>
+            <name>Share project.</name>
+            <title>Share project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629876243726' status='failed' stop='1629876246227'>
+            <name>Share numeric project.</name>
+            <title>Share numeric project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='699224df-c4b4-41c5-a1a0-8bd44b739168-attachment.png' type='image/png' size='55963'/>
+            </attachments>
+            <failure>
+                <message>Expected 'folder' to equal 'folder-open'.</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\download-share-projects-spec.ts:58:54)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629876246227' status='failed' stop='1629876250157'>
+            <name>Share log project.</name>
+            <title>Share log project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='9ec1a5b6-78f7-4e13-9b6c-8f8ad9b51e61-attachment.png' type='image/png' size='55696'/>
+            </attachments>
+            <failure>
+                <message>Expected 'folder' to equal 'folder-open'.</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\download-share-projects-spec.ts:66:54)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

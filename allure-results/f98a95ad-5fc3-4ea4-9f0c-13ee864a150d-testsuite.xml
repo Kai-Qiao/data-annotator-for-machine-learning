@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629276025451' stop='1629276330816'>
+    <name>verify generate-download-share funtion verify project tab</name>
+    <title>verify generate-download-share funtion verify project tab</title>
+    <test-cases>
+        <test-case start='1629276025451' status='failed' stop='1629276325611'>
+            <name>Generate-new-dataset.</name>
+            <title>Generate-new-dataset.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='aef6b6c2-7ef0-43e5-b238-904611558a8d-attachment.png' type='image/png' size='77612'/>
+                <attachment title='Screenshot' source='308a0369-74d7-40be-8f4e-39100c75065e-attachment.png' type='image/png' size='77612'/>
+            </attachments>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.</message>
+                <stack-trace>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
+                    at Timeout._onTimeout (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4281:23)
+                    at listOnTimeout (internal/timers.js:554:17)
+                    at processTimers (internal/timers.js:497:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629276325612' status='passed' stop='1629276330132'>
+            <name>Download project.</name>
+            <title>Download project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629276330133' status='passed' stop='1629276330813'>
+            <name>Share project.</name>
+            <title>Share project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

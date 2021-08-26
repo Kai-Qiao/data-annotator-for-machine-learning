@@ -1,0 +1,74 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629857037257' stop='1629857262440'>
+    <name>Service</name>
+    <title>Service</title>
+    <test-cases>
+        <test-case start='1629857062326' status='failed' stop='1629857262432'>
+            <name>Sign up with normal user successfully</name>
+            <title>Sign up with normal user successfully</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='6c52bacb-8c94-493b-b33c-54b28f9b04ef-attachment.png' type='image/png' size='10065'/>
+                <attachment title='Screenshot' source='1ffa7a08-2f35-44b6-9b7c-0c06a32bf63d-attachment.png' type='image/png' size='10065'/>
+                <attachment title='Screenshot' source='baad2952-ead7-4b11-859e-9af01f5fd712-attachment.png' type='image/png' size='10065'/>
+            </attachments>
+            <failure>
+                <message>Failed: Error while waiting for Protractor to sync with the page: "both angularJS testability and angular testability are undefined.  This could be either because this is a non-angular page or because your test involves client-side navigation, which can interfere with Protractor's bootstrapping.  See http://git.io/v4gXM for details"</message>
+                <stack-trace>Error: Error while waiting for Protractor to sync with the page: "both angularJS testability and angular testability are undefined.  This could be either because this is a non-angular page or because your test involves client-side navigation, which can interfere with Protractor's bootstrapping.  See http://git.io/v4gXM for details"
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\browser.js:461:23
+                    at ManagedPromise.invokeCallback_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+                    at TaskQueue.execute_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2927:27
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:668:7
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                From: Task: &lt;anonymous>
+                    at pollCondition (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2195:19)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2191:7
+                    at new ManagedPromise (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+                    at ControlFlow.promise (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2190:22
+                    at TaskQueue.execute_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2974:25
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:668:7
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                From: Task: &lt;anonymous wait>
+                    at scheduleWait (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2188:20)
+                    at ControlFlow.wait (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2517:12)
+                    at Driver.wait (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:934:29)
+                    at run (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\browser.js:58:33)
+                    at ProtractorBrowser.to.&lt;computed> [as wait] (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\browser.js:66:16)
+                    at E:\vmware\Loop\GitHub\e2e\page-object\login-page.ts:37:17
+                    at ManagedPromise.invokeCallback_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+                    at TaskQueue.execute_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2927:27
+                From: Task: Run beforeAll in control flow
+                    at UserContext.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at QueueRunner.execute (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+                    at queueRunnerFactory (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+                    at UserContext.fn (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5325:13)
+                    at attempt (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at QueueRunner.execute (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+                    at queueRunnerFactory (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+                From asynchronous test: 
+                Error: 
+                    at Suite.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\general\sign-up-external-spec.ts:17:5)
+                    at addSpecsToSuite (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\general\sign-up-external-spec.ts:11:1)
+                    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+                    at Module.m._compile (E:\vmware\Loop\GitHub\e2e\node_modules\ts-node\src\index.ts:422:23)
+                    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+                    at Object.require.extensions.&lt;computed> [as .ts] (E:\vmware\Loop\GitHub\e2e\node_modules\ts-node\src\index.ts:425:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

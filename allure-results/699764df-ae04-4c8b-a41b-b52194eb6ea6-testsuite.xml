@@ -1,0 +1,114 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629271384092' stop='1629271506239'>
+    <name>verify image project append funtion</name>
+    <title>verify image project append funtion</title>
+    <test-cases>
+        <test-case start='1629271384092' status='passed' stop='1629271386943'>
+            <name>Qick append verify add new line</name>
+            <title>Qick append verify add new line</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629271386944' status='failed' stop='1629271506079'>
+            <name>Qick append verify delete new line</name>
+            <title>Qick append verify delete new line</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='81470927-d705-4a02-8d0f-c64abb862e13-attachment.png' type='image/png' size='36013'/>
+            </attachments>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.</message>
+                <stack-trace>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
+                    at Timeout._onTimeout (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4281:23)
+                    at listOnTimeout (internal/timers.js:554:17)
+                    at processTimers (internal/timers.js:497:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629271506081' status='failed' stop='1629271506154'>
+            <name>Qick append verify publish</name>
+            <title>Qick append verify publish</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: EADDRINUSE connect EADDRINUSE 127.0.0.1:62577</message>
+                <stack-trace>Error: EADDRINUSE connect EADDRINUSE 127.0.0.1:62577
+                    at ClientRequest.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\http\index.js:238:15)
+                    at ClientRequest.emit (events.js:315:20)
+                    at Socket.socketErrorListener (_http_client.js:469:9)
+                    at Socket.emit (events.js:315:20)
+                    at emitErrorNT (internal/streams/destroy.js:106:8)
+                    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+                    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+                From: Task: WebDriver.manage().logs().get(browser)
+                    at Driver.schedule (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+                    at Logs.get (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:1731:25)
+                    at Jasmine2Reporter._callee7$ (E:\vmware\Loop\GitHub\e2e\node_modules\protractor-beautiful-reporter\index.js:5154:64)
+                    at tryCatch (E:\vmware\Loop\GitHub\e2e\node_modules\protractor-beautiful-reporter\index.js:5748:40)
+                    at Generator.invoke [as _invoke] (E:\vmware\Loop\GitHub\e2e\node_modules\protractor-beautiful-reporter\index.js:6022:22)
+                    at Generator.prototype.&lt;computed> [as next] (E:\vmware\Loop\GitHub\e2e\node_modules\protractor-beautiful-reporter\index.js:5781:21)
+                    at step (E:\vmware\Loop\GitHub\e2e\node_modules\protractor-beautiful-reporter\index.js:4754:191)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\protractor-beautiful-reporter\index.js:4754:361
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                From: Task: Run beforeEach in control flow
+                    at UserContext.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at QueueRunner.execute (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+                    at Spec.execute (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+                    at UserContext.fn (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+                    at attempt (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                From asynchronous test: 
+                Error: 
+                    at Jasmine2Reporter.jasmineStarted (E:\vmware\Loop\GitHub\e2e\node_modules\protractor-beautiful-reporter\index.js:4948:13)
+                    at dispatch (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4366:28)
+                    at ReportDispatcher.jasmineStarted (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4337:11)
+                    at Env.execute (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:975:16)
+                    at Jasmine.execute (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\lib\jasmine.js:200:12)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\frameworks\jasmine.js:132:15
+                    at Function.promise (E:\vmware\Loop\GitHub\e2e\node_modules\q\q.js:682:9)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\frameworks\jasmine.js:104:14
+                    at _fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\q\q.js:834:54)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629271506154' status='failed' stop='1629271506232'>
+            <name>File append verify selete existing file</name>
+            <title>File append verify selete existing file</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: EADDRINUSE connect EADDRINUSE 127.0.0.1:62577</message>
+                <stack-trace>Error: EADDRINUSE connect EADDRINUSE 127.0.0.1:62577
+                    at ClientRequest.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\http\index.js:238:15)
+                    at ClientRequest.emit (events.js:315:20)
+                    at Socket.socketErrorListener (_http_client.js:469:9)
+                    at Socket.emit (events.js:315:20)
+                    at emitErrorNT (internal/streams/destroy.js:106:8)
+                    at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+                    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+                From: Task: WebDriver.takeScreenshot()
+                    at Driver.schedule (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+                    at Driver.takeScreenshot (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
+                    at run (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\browser.js:58:33)
+                    at ProtractorBrowser.to.&lt;computed> [as takeScreenshot] (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\browser.js:66:16)
+                    at Spec.jasmine.Spec.addExpectationResult (E:\vmware\Loop\GitHub\e2e\protractor.config.js:145:17)
+                    at Spec.onException (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:548:10)
+                    at QueueRunner.onException (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:515:50)
+                    at onException (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4310:14)
+                    at handleError (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4243:11)
+                    at process.onerror (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:2371:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629281121677' stop='1629281128240'>
+    <name>Enter projects tab...</name>
+    <title>Enter projects tab...</title>
+    <test-cases>
+        <test-case start='1629281121845' status='passed' stop='1629281125681'>
+            <name>User and category charts should display normally.</name>
+            <title>User and category charts should display normally.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629281125682' status='passed' stop='1629281128239'>
+            <name>Delete and silence single flagged ticket successfully.</name>
+            <title>Delete and silence single flagged ticket successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

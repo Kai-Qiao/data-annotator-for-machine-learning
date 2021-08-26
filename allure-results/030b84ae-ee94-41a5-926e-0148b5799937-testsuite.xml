@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629860476293' stop='1629860576882'>
+    <name>annotate project ...</name>
+    <title>annotate project ...</title>
+    <test-cases>
+        <test-case start='1629860476295' status='passed' stop='1629860496259'>
+            <name>Should create and clear log project filter successfully.</name>
+            <title>Should create and clear log project filter successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629860496259' status='passed' stop='1629860508397'>
+            <name>Should wrap and clear wrap log project text successfully.</name>
+            <title>Should wrap and clear wrap log project text successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629860508397' status='passed' stop='1629860515276'>
+            <name>Should annotate one row of log project successfully.</name>
+            <title>Should annotate one row of log project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629860515278' status='passed' stop='1629860520450'>
+            <name>Should delete one row of log project successfully.</name>
+            <title>Should delete one row of log project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629860520451' status='passed' stop='1629860527066'>
+            <name>Should add row freeText successfully.</name>
+            <title>Should add row freeText successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629860527068' status='passed' stop='1629860533846'>
+            <name>Should add log freeText successfully.</name>
+            <title>Should add log freeText successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629860533849' status='passed' stop='1629860550344'>
+            <name>Should submit and skip and flag log annotation successfully.</name>
+            <title>Should submit and skip and flag log annotation successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629860550351' status='passed' stop='1629860576779'>
+            <name>Should review log project successfully.</name>
+            <title>Should review log project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

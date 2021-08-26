@@ -1,0 +1,146 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629256038799' stop='1629256072870'>
+    <name>verify log append funtion</name>
+    <title>verify log append funtion</title>
+    <test-cases>
+        <test-case start='1629256038799' status='failed' stop='1629256041744'>
+            <name>Qick append verify log add new line</name>
+            <title>Qick append verify log add new line</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='9b5c49a3-dfbb-42b7-9d6d-43e65a260628-attachment.png' type='image/png' size='42935'/>
+            </attachments>
+            <failure>
+                <message>Expected 2 to be 3.</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\append-project-log-spec.ts:34:59)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629256041745' status='failed' stop='1629256043060'>
+            <name>Qick append verify log delete new line</name>
+            <title>Qick append verify log delete new line</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='2293cd74-3415-4a61-843c-2e69a293d380-attachment.png' type='image/png' size='41550'/>
+            </attachments>
+            <failure>
+                <message>Expected 1 to be 2.</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\append-project-log-spec.ts:42:59)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629256043061' status='failed' stop='1629256072767'>
+            <name>Qick append verify log publish</name>
+            <title>Qick append verify log publish</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=92.0.4515.131)
+                  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Windows NT 10.0.19043 x86_64)</message>
+                <stack-trace>NoSuchWindowError: no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=92.0.4515.131)
+                  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Windows NT 10.0.19043 x86_64)
+                    at Object.checkLegacyResponse (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\error.js:546:15)
+                    at parseHttpResponse (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\http.js:509:13)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\http.js:441:30
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                From: Task: WebDriver.findElements(By(css selector, button[title="Click to Append New Entries"]))
+                    at Driver.schedule (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+                    at Driver.findElements (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:1048:19)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\element.js:159:44
+                    at ManagedPromise.invokeCallback_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+                    at TaskQueue.execute_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2927:27
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:668:7
+                From: Task: &lt;anonymous>
+                    at Timeout.pollCondition [as _onTimeout] (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2195:19)
+                    at listOnTimeout (internal/timers.js:554:17)
+                    at processTimers (internal/timers.js:497:7)
+                From: Task: &lt;anonymous wait>
+                    at scheduleWait (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2188:20)
+                    at ControlFlow.wait (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2517:12)
+                    at Driver.wait (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:934:29)
+                    at run (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\browser.js:58:33)
+                    at ProtractorBrowser.to.&lt;computed> [as wait] (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\browser.js:66:16)
+                    at Function.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\utils\function-util.ts:140:19)
+                    at Generator.next (&lt;anonymous>)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:115:75
+                    at new Promise (&lt;anonymous>)
+                    at Object.__awaiter (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:111:16)
+                From: Task: Run it("Qick append verify log publish") in control flow
+                    at UserContext.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\jasminewd2\index.js:64:48
+                    at ControlFlow.emit (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\events.js:62:21)
+                    at ControlFlow.shutdown_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2599:53
+                From asynchronous test: 
+                Error: 
+                    at Suite.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\append-project-log-spec.ts:46:3)
+                    at addSpecsToSuite (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\append-project-log-spec.ts:11:1)
+                    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+                    at Module.m._compile (E:\vmware\Loop\GitHub\e2e\node_modules\ts-node\src\index.ts:422:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+                    at Object.require.extensions.&lt;computed> [as .ts] (E:\vmware\Loop\GitHub\e2e\node_modules\ts-node\src\index.ts:425:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629256072768' status='failed' stop='1629256072867'>
+            <name>File append verify log selete existing file</name>
+            <title>File append verify log selete existing file</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>NoSuchWindowError: no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=92.0.4515.131)
+                  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Windows NT 10.0.19043 x86_64)</message>
+                <stack-trace>NoSuchWindowError: no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=92.0.4515.131)
+                  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Windows NT 10.0.19043 x86_64)
+                    at Object.checkLegacyResponse (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\error.js:546:15)
+                    at parseHttpResponse (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\http.js:509:13)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\http.js:441:30
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                From: Task: WebDriver.takeScreenshot()
+                    at Driver.schedule (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+                    at Driver.takeScreenshot (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:1085:17)
+                    at run (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\browser.js:58:33)
+                    at ProtractorBrowser.to.&lt;computed> [as takeScreenshot] (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\browser.js:66:16)
+                    at Spec.jasmine.Spec.addExpectationResult (E:\vmware\Loop\GitHub\e2e\protractor.config.js:143:17)
+                    at Spec.onException (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:548:10)
+                    at QueueRunner.onException (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:515:50)
+                    at onException (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4310:14)
+                    at handleError (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4243:11)
+                    at process.onerror (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:2371:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

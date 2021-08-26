@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629857284005' stop='1629857504422'>
+    <name>Service</name>
+    <title>Service</title>
+    <test-cases>
+        <test-case start='1629857304291' status='failed' stop='1629857504419'>
+            <name>Sign up with normal user successfully</name>
+            <title>Sign up with normal user successfully</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='528d5cbb-921a-4975-8b19-950983e5daac-attachment.png' type='image/png' size='7513'/>
+                <attachment title='Screenshot' source='a60a2c31-b329-4be9-815f-2d6748eaa37b-attachment.png' type='image/png' size='7513'/>
+                <attachment title='Screenshot' source='30e6884d-874b-4479-bb93-66dfbd304401-attachment.png' type='image/png' size='7513'/>
+            </attachments>
+            <failure>
+                <message>Failed: unknown error: net::ERR_CONNECTION_REFUSED
+                  (Session info: headless chrome=92.0.4515.159)
+                  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Windows NT 10.0.19043 x86_64)</message>
+                <stack-trace>WebDriverError: unknown error: net::ERR_CONNECTION_REFUSED
+                  (Session info: headless chrome=92.0.4515.159)
+                  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Windows NT 10.0.19043 x86_64)
+                    at Object.checkLegacyResponse (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\error.js:546:15)
+                    at parseHttpResponse (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\http.js:509:13)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\http.js:441:30
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                From: Task: WebDriver.navigate().to(http://localhost:4200/)
+                    at Driver.schedule (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+                    at Navigation.to (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:1133:25)
+                    at Driver.get (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:988:28)
+                    at LoginPage.navigateTo (E:\vmware\Loop\GitHub\e2e\page-object\login-page.ts:35:8)
+                    at E:\vmware\Loop\GitHub\e2e\general\sign-up-external-spec.ts:22:27
+                    at ManagedPromise.invokeCallback_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+                    at TaskQueue.execute_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2927:27
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:668:7
+                From: Task: Run beforeAll in control flow
+                    at UserContext.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at QueueRunner.execute (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+                    at queueRunnerFactory (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+                    at UserContext.fn (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5325:13)
+                    at attempt (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at QueueRunner.execute (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+                    at queueRunnerFactory (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+                From asynchronous test: 
+                Error: 
+                    at Suite.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\general\sign-up-external-spec.ts:17:5)
+                    at addSpecsToSuite (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\general\sign-up-external-spec.ts:11:1)
+                    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+                    at Module.m._compile (E:\vmware\Loop\GitHub\e2e\node_modules\ts-node\src\index.ts:422:23)
+                    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+                    at Object.require.extensions.&lt;computed> [as .ts] (E:\vmware\Loop\GitHub\e2e\node_modules\ts-node\src\index.ts:425:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

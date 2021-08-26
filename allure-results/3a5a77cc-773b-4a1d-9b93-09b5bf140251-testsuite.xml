@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629275722898' stop='1629275723850'>
+    <name>delete function</name>
+    <title>delete function</title>
+    <test-cases>
+        <test-case start='1629275723013' status='passed' stop='1629275723849'>
+            <name>Delete the added datasets.</name>
+            <title>Delete the added datasets.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

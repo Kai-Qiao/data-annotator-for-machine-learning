@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629706001293' stop='1629706006952'>
+    <name>Create new project </name>
+    <title>Create new project </title>
+    <test-cases>
+        <test-case start='1629706001462' status='passed' stop='1629706006819'>
+            <name>Should create ner labels existing project successfully.</name>
+            <title>Should create ner labels existing project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

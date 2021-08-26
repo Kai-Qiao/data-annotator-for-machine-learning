@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629705947893' stop='1629705968063'>
+    <name>verify generate-download-share funtion verify project tab</name>
+    <title>verify generate-download-share funtion verify project tab</title>
+    <test-cases>
+        <test-case start='1629705947893' status='passed' stop='1629705958905'>
+            <name>Generate-new-dataset.</name>
+            <title>Generate-new-dataset.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629705958905' status='passed' stop='1629705967313'>
+            <name>Download project.</name>
+            <title>Download project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629705967313' status='passed' stop='1629705968062'>
+            <name>Share project.</name>
+            <title>Share project.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

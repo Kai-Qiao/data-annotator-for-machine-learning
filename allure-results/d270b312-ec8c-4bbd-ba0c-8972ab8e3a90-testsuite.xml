@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629275361307' stop='1629275373383'>
+    <name>upload new dataset on myDatasets page..</name>
+    <title>upload new dataset on myDatasets page..</title>
+    <test-cases>
+        <test-case start='1629275361467' status='failed' stop='1629275373382'>
+            <name>Should upload new dataset successfully.</name>
+            <title>Should upload new dataset successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='1835db2e-6f74-448d-a709-f114099ed87c-attachment.png' type='image/png' size='56542'/>
+                <attachment title='Screenshot' source='9c51a9a7-8ba4-429c-b349-255968cf7d8c-attachment.png' type='image/png' size='54885'/>
+            </attachments>
+            <failure>
+                <message>should has share successfully prompt</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\upload-new-dataset-spec.ts:35:8)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

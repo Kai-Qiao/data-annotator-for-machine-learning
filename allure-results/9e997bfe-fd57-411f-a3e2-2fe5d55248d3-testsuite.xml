@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629682811233' stop='1629682815791'>
+    <name>delete function</name>
+    <title>delete function</title>
+    <test-cases>
+        <test-case start='1629682811366' status='passed' stop='1629682812871'>
+            <name>Should preview text dataset successfully.</name>
+            <title>Should preview text dataset successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629682812871' status='passed' stop='1629682814319'>
+            <name>Should preview log dataset successfully.</name>
+            <title>Should preview log dataset successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629682814319' status='passed' stop='1629682815790'>
+            <name>Should preview image dataset successfully.</name>
+            <title>Should preview image dataset successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

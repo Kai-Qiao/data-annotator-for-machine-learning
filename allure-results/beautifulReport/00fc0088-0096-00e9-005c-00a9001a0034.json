@@ -1,0 +1,1 @@
+{"description":"Should annotate project with less than 6 labels successfully.|annotate project ...","passed":true,"pending":false,"os":"Windows","instanceId":25776,"browser":{"name":"chrome","version":"92.0.4515.159"},"message":"Passed.","trace":"","browserLogs":[],"screenShotFile":"00fc0088-0096-00e9-005c-00a9001a0034.png","timestamp":1629860649043,"duration":21415}

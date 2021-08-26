@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629254152680' stop='1629254753248'>
+    <name>Enter projects tab...</name>
+    <title>Enter projects tab...</title>
+    <test-cases>
+        <test-case start='1629254152930' status='failed' stop='1629254452963'>
+            <name>User and category charts should display normally.</name>
+            <title>User and category charts should display normally.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='32563113-6263-4694-a85c-5b6d6d6174ec-attachment.png' type='image/png' size='57639'/>
+                <attachment title='Screenshot' source='99f6e4d4-8092-4919-b012-aa1ecb533163-attachment.png' type='image/png' size='53045'/>
+            </attachments>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.</message>
+                <stack-trace>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
+                    at Timeout._onTimeout (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4281:23)
+                    at listOnTimeout (internal/timers.js:554:17)
+                    at processTimers (internal/timers.js:497:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629254452963' status='failed' stop='1629254753246'>
+            <name>Delete and silence single flagged ticket successfully.</name>
+            <title>Delete and silence single flagged ticket successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='7036a5be-c3f0-42ef-ba27-c7196d8ebc43-attachment.png' type='image/png' size='46384'/>
+                <attachment title='Screenshot' source='24cb6aa3-ce68-4050-aa6e-1669e96aa5a3-attachment.png' type='image/png' size='46384'/>
+            </attachments>
+            <failure>
+                <message>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.</message>
+                <stack-trace>Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
+                    at Timeout._onTimeout (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4281:23)
+                    at listOnTimeout (internal/timers.js:554:17)
+                    at processTimers (internal/timers.js:497:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

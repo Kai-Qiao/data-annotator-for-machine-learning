@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629690975770' stop='1629691181853'>
+    <name>annotate project ...</name>
+    <title>annotate project ...</title>
+    <test-cases>
+        <test-case start='1629690975772' status='failed' stop='1629691181851'>
+            <name>Should annotate tabular numeric labels project successfully.</name>
+            <title>Should annotate tabular numeric labels project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='e9901927-fc10-4816-adab-1746392fbd00-attachment.png' type='image/png' size='59232'/>
+                <attachment title='Screenshot' source='773414d9-d5f3-4e42-9698-0e41c86bbff0-attachment.png' type='image/png' size='59232'/>
+            </attachments>
+            <failure>
+                <message>WebDriverError: element click intercepted: Element &lt;a _ngcontent-oyg-c1="" class="nav-link" href="/game" routerlinkactive="active">...&lt;/a> is not clickable at point (436, 30). Other element would receive the click: &lt;div _ngcontent-oyg-c13="" class="modal">...&lt;/div>
+                  (Session info: chrome=92.0.4515.159)
+                  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Windows NT 10.0.19043 x86_64)</message>
+                <stack-trace>WebDriverError: element click intercepted: Element &lt;a _ngcontent-oyg-c1="" class="nav-link" href="/game" routerlinkactive="active">...&lt;/a> is not clickable at point (436, 30). Other element would receive the click: &lt;div _ngcontent-oyg-c13="" class="modal">...&lt;/div>
+                  (Session info: chrome=92.0.4515.159)
+                  (Driver info: chromedriver=92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}),platform=Windows NT 10.0.19043 x86_64)
+                    at Object.checkLegacyResponse (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\error.js:546:15)
+                    at parseHttpResponse (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\http.js:509:13)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\http.js:441:30
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                From: Task: WebElement.click()
+                    at Driver.schedule (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+                    at WebElement.schedule_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:2010:25)
+                    at WebElement.click (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\webdriver.js:2092:17)
+                    at actionFn (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\element.js:89:44)
+                    at Array.map (&lt;anonymous>)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\element.js:461:65
+                    at ManagedPromise.invokeCallback_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+                    at TaskQueue.execute_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2927:27Error: 
+                    at ElementArrayFinder.applyAction_ (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\element.js:459:27)
+                    at ElementArrayFinder.&lt;computed> [as click] (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\element.js:91:29)
+                    at ElementFinder.&lt;computed> [as click] (E:\vmware\Loop\GitHub\e2e\node_modules\protractor\built\element.js:831:22)
+                    at AnnotatePage.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\page-object\annotate-page.ts:77:25)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

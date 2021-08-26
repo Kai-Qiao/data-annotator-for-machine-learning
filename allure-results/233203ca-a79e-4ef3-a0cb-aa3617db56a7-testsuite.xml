@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629700052950' stop='1629700056928'>
+    <name>delete function</name>
+    <title>delete function</title>
+    <test-cases>
+        <test-case start='1629700053264' status='passed' stop='1629700056926'>
+            <name>Delete the added projects.</name>
+            <title>Delete the added projects.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629697696968' stop='1629697715865'>
+    <name>Enter projects tab...</name>
+    <title>Enter projects tab...</title>
+    <test-cases>
+        <test-case start='1629697697236' status='passed' stop='1629697701383'>
+            <name>Should preview text al project, user and category charts should display normally.</name>
+            <title>Should preview text al project, user and category charts should display normally.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629697701384' status='passed' stop='1629697704069'>
+            <name>Should preview text al project, delete and silence single flagged ticket successfully.</name>
+            <title>Should preview text al project, delete and silence single flagged ticket successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629697704070' status='passed' stop='1629697707567'>
+            <name>Should preview log project, filter file name and return successfully.</name>
+            <title>Should preview log project, filter file name and return successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629697707567' status='passed' stop='1629697713746'>
+            <name>Should preview image project, expand cell successfully.</name>
+            <title>Should preview image project, expand cell successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629697713746' status='passed' stop='1629697715864'>
+            <name>Should preview ner project, expand cell successfully.</name>
+            <title>Should preview ner project, expand cell successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

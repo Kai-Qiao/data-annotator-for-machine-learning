@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629699941735' stop='1629699950710'>
+    <name>upload new dataset on myDatasets page..</name>
+    <title>upload new dataset on myDatasets page..</title>
+    <test-cases>
+        <test-case start='1629699941940' status='passed' stop='1629699950709'>
+            <name>Should upload new dataset successfully.</name>
+            <title>Should upload new dataset successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629889401821' stop='1629889443634'>
+    <name>verify generate-download-share funtion verify community-dataset tab</name>
+    <title>verify generate-download-share funtion verify community-dataset tab</title>
+    <test-cases>
+        <test-case start='1629889401821' status='passed' stop='1629889411334'>
+            <name>Generate-new-dataset</name>
+            <title>Generate-new-dataset</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629889411335' status='passed' stop='1629889419715'>
+            <name>Download project</name>
+            <title>Download project</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629889419715' status='passed' stop='1629889425524'>
+            <name>Download numberic project</name>
+            <title>Download numberic project</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629889425524' status='passed' stop='1629889434756'>
+            <name>Download log project</name>
+            <title>Download log project</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629889434756' status='passed' stop='1629889443632'>
+            <name>Download log original datasets</name>
+            <title>Download log original datasets</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

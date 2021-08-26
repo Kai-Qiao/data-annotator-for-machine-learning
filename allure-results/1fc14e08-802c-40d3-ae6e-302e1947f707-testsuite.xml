@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629879654165' stop='1629879700935'>
+    <name>verify generate-download-share funtion verify community-dataset tab</name>
+    <title>verify generate-download-share funtion verify community-dataset tab</title>
+    <test-cases>
+        <test-case start='1629879654165' status='failed' stop='1629879680632'>
+            <name>Download log project</name>
+            <title>Download log project</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='7a1fabac-4dca-4dbc-9353-7972aef68e96-attachment.png' type='image/png' size='63789'/>
+            </attachments>
+            <failure>
+                <message>Expected undefined to be true.</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\download-share-projects-spec.ts:117:84)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1629879680632' status='passed' stop='1629879700934'>
+            <name>Download log original datasets</name>
+            <title>Download log original datasets</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

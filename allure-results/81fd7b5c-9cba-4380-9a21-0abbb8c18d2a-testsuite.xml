@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629876250167' stop='1629876486798'>
+    <name>verify generate-download-share funtion verify community-dataset tab</name>
+    <title>verify generate-download-share funtion verify community-dataset tab</title>
+    <test-cases>
+        <test-case start='1629876250167' status='passed' stop='1629876262314'>
+            <name>Generate-new-dataset</name>
+            <title>Generate-new-dataset</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629876262315' status='passed' stop='1629876272169'>
+            <name>Download project</name>
+            <title>Download project</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629876272169' status='passed' stop='1629876279433'>
+            <name>Download numberic project</name>
+            <title>Download numberic project</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1629876279433' status='failed' stop='1629876486796'>
+            <name>Download log project</name>
+            <title>Download log project</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='22e0c769-7cd0-448e-9cd4-f2ba7ddb637b-attachment.png' type='image/png' size='70655'/>
+                <attachment title='Screenshot' source='0e3f3be0-548b-495c-bcb6-bcd80c3d9d18-attachment.png' type='image/png' size='70655'/>
+            </attachments>
+            <failure>
+                <message>Error: ENOENT: no such file or directory, scandir 'E:\vmware\Loop\GitHub\e2e\doc\download'</message>
+                <stack-trace>Error: ENOENT: no such file or directory, scandir 'E:\vmware\Loop\GitHub\e2e\doc\download'
+                    at Object.readdirSync (node:fs:1390:3)
+                    at DownloadSharePage.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\page-object\download-share-page.ts:49:29)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

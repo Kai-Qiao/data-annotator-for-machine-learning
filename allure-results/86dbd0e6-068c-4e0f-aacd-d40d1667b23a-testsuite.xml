@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629875726543' stop='1629875785001'>
+    <name>Create new project </name>
+    <title>Create new project </title>
+    <test-cases>
+        <test-case start='1629875726552' status='failed' stop='1629875784224'>
+            <name>Should create new tabular numeric labels project successfully.</name>
+            <title>Should create new tabular numeric labels project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='f1246a46-b67d-4d23-acc2-48b72d1182a5-attachment.png' type='image/png' size='65712'/>
+            </attachments>
+            <failure>
+                <message>Failed: can not filter out the consitent project....</message>
+                <stack-trace>Error: can not filter out the consitent project....
+                    at Function.wrappedReject [as fail] (E:\vmware\Loop\GitHub\e2e\node_modules\jasminewd2\index.js:100:24)
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\creat-tabular-numeric-project-spec.ts:89:12)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (E:\vmware\Loop\GitHub\e2e\node_modules\tslib\tslib.js:112:62)
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                From: Task: Run it("Should create new tabular numeric labels project successfully.") in control flow
+                    at UserContext.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\jasminewd2\index.js:64:48
+                    at ControlFlow.emit (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\events.js:62:21)
+                    at ControlFlow.shutdown_ (E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+                    at E:\vmware\Loop\GitHub\e2e\node_modules\selenium-webdriver\lib\promise.js:2599:53
+                From asynchronous test: 
+                Error: 
+                    at Suite.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\creat-tabular-numeric-project-spec.ts:46:3)
+                    at addSpecsToSuite (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (E:\vmware\Loop\GitHub\e2e\node_modules\jasmine\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (E:\vmware\Loop\GitHub\e2e\features\creat-tabular-numeric-project-spec.ts:12:1)
+                    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+                    at Module.m._compile (E:\vmware\Loop\GitHub\e2e\node_modules\ts-node\src\index.ts:422:23)
+                    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+                    at Object.require.extensions.&lt;computed> [as .ts] (E:\vmware\Loop\GitHub\e2e\node_modules\ts-node\src\index.ts:425:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

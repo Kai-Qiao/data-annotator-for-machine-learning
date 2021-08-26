@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1629275954545' stop='1629275960236'>
+    <name>edit project info on projects page..</name>
+    <title>edit project info on projects page..</title>
+    <test-cases>
+        <test-case start='1629275954685' status='passed' stop='1629275960234'>
+            <name>Should edit text al project successfully.</name>
+            <title>Should edit text al project successfully.</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
