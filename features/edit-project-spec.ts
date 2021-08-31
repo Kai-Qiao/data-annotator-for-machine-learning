@@ -43,18 +43,22 @@ describe("edit project info on projects page..", () => {
       await editPage.editProjectName(Project_Name_Text);
       await editPage.editProjectOwner(
         projectEditData.TextProject.Email_Validation,
-        projectEditData.TextProject.Owner
+        projectEditData.TextProject.Owner2,
+        projectEditData.TextProject.Owner3
       );
+      await editPage.deleteProjectOwner(projectEditData.TextProject.Owner3);
       await editPage.editProjectAnnotator(
         projectEditData.TextProject.Email_Validation,
         projectEditData.TextProject.Annotator
       );
       await editPage.addLabel(New_Lable);
       await editPage.editALProjectThreshold(
-        projectEditData.TextProject.Threshold
+        projectEditData.TextProject.Threshold,
+        projectEditData.TextProject.Threshold_Err
       );
       await editPage.editALProjectFrequency(
-        projectEditData.TextProject.Frequency
+        projectEditData.TextProject.Frequency,
+        projectEditData.TextProject.Frequency_Err
       );
       await editPage.clickEditSubmitButton();
       await browser.wait(
@@ -93,10 +97,10 @@ describe("edit project info on projects page..", () => {
         .toEqual(Constant.project_name_text_al);
       since("project owner should be 2 and content correct")
         .expect(New_Project_Owner)
-        .toEqual(Constant.username + "," + projectEditData.TextProject.Owner);
-      since("project annotator should be 2 and content correct")
+        .toEqual(Constant.username + "," + projectEditData.TextProject.Owner2);
+      since("project annotator should be 6 and content correct")
         .expect(New_Project_Annotator.split("\n").length)
-        .toEqual(4);
+        .toBeGreaterThan(10);
       since("project labels should be 7 and content correct")
         .expect(New_Project_Labels)
         .toEqual(
@@ -104,6 +108,24 @@ describe("edit project info on projects page..", () => {
             "," +
             projectEditData.TextProject.Labels
         );
+    } else {
+      console.log("can not filter out the projects....");
+    }
+    done();
+  });
+
+  it("Should cancel edit text al project successfully.", async (done) => {
+    project_name = Constant.project_name_text_al;
+    await projectsPage.filterProjectName(project_name);
+    let Project_Count_After_Filter = await projectsPage.getTableLength();
+    let Project_Name_Text = await projectsPage.getCellText(0);
+    console.log("Project_Count_After_Filter:::", Project_Count_After_Filter);
+    console.log("Project_Name_Text:::", Project_Name_Text);
+    if (Project_Name_Text !== "" || Project_Count_After_Filter > 0) {
+      console.log("----------start to edit projects----------");
+      await editPage.clickEditButton();
+      await editPage.cancelEdit(LABEL1_INPUT);
+      await projectsPage.waitForGridLoading();
     } else {
       console.log("can not filter out the projects....");
     }
@@ -197,7 +219,10 @@ describe("edit project info on projects page..", () => {
       console.log("----------start to edit projects----------");
       await editPage.clickEditButton();
       await editPage.editNumericScope(
-        projectEditData.TabularNumericProject.Min
+        projectEditData.TabularNumericProject.Min,
+        projectEditData.TabularNumericProject.Min_Validation,
+        projectEditData.TabularNumericProject.Max,
+        projectEditData.TabularNumericProject.Max_Validation
       );
       await editPage.clickEditSubmitButton();
       await browser.wait(

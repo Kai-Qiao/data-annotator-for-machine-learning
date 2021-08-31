@@ -27,6 +27,8 @@ describe("Create new project ", () => {
     Serial_Num = new Date().getTime().toString();
     New_Project_Name = "e2e Test Project Log " + Serial_Num;
     New_CSV_Name = "e2e Test Data Log" + Serial_Num;
+    Constant.project_name_log = New_Project_Name;
+    Constant.dataset_name_log = New_CSV_Name;
     LoginBussiness.verifyLogin();
     newProjectPage = new NewProjectPage();
     projectsPage = new ProjecstPage();
@@ -43,9 +45,13 @@ describe("Create new project ", () => {
     await newProjectPage.navigateTo();
     await browser.waitForAngular();
     await newProjectPage.clickNewProjectBtn(PROJECT_NER_CLASSIFICATION);
+    await newProjectPage.uploadCSV(New_CSV_Name, CSV_Path);
+    await newProjectPage.navigateTo();
+    await browser.waitForAngular();
+    await newProjectPage.clickNewProjectBtn(PROJECT_NER_CLASSIFICATION);
     await newProjectPage.setProjectName(New_Project_Name);
     await newProjectPage.setTaskInstruction(Task_Instruction);
-    await newProjectPage.uploadCSV(New_CSV_Name, CSV_Path);
+    await newProjectPage.selectExistingFile(Constant.dataset_name_log);
     await newProjectPage.isShowFilename();
     await newProjectPage.setNewLable(
       projectCreateData.LogProject.Labels.split(",")

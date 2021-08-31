@@ -7,11 +7,13 @@ import { Constant } from "../general/constant";
 import { AnnotatePage } from "../page-object/annotate-page";
 import { browser } from "protractor";
 import { ProjecstPage } from "../page-object/projects-page";
+import { CommonPage } from "../general/commom-page";
 const projectCreateData = require("../resources/project-create-page/test-data");
 
 describe("annotate project ...", () => {
   let annotatePage: AnnotatePage;
   let projectsPage: ProjecstPage;
+  let commonPage: CommonPage;
   let since = require("jasmine2-custom-message");
   let project_name: string;
 
@@ -20,12 +22,14 @@ describe("annotate project ...", () => {
     LoginBussiness.verifyLogin();
     annotatePage = new AnnotatePage();
     projectsPage = new ProjecstPage();
+    commonPage = new CommonPage();
     console.log("start to annotate project: " + project_name);
   });
 
   it("Should annotate project with less than 6 labels successfully.", async (done) => {
     await annotatePage.navigateTo();
     await annotatePage.waitForGridLoading();
+    await commonPage.changePageValue(2);
     await annotatePage.filterProjectName(project_name);
     let Project_Count_After_Filter = await projectsPage.getTableLength();
     let Project_Name_Text = await projectsPage.getCellText(0);

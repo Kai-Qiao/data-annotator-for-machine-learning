@@ -7,6 +7,7 @@ import { NewProjectPage } from "../page-object/new-project-page";
 import { browser, by, element, ExpectedConditions, $, $$ } from "protractor";
 import { Constant } from "../general/constant";
 import { ProjecstPage } from "../page-object/projects-page";
+import { EditPage } from "../page-object/edit-page";
 const projectCreateData = require("../resources/project-create-page/test-data");
 
 describe("Create new project ", () => {
@@ -23,12 +24,13 @@ describe("Create new project ", () => {
   let Serial_Num: string;
   let newProjectPage: NewProjectPage;
   let projectsPage: ProjecstPage;
+  let editPage: EditPage;
   let since = require("jasmine2-custom-message");
 
   beforeAll(() => {
     Serial_Num = new Date().getTime().toString();
     New_Project_Name = "e2e Test Project Text Al " + Serial_Num;
-    New_CSV_Name = "e2e Test Data Text" + Serial_Num;
+    New_CSV_Name = "e2e Test Data Text " + Serial_Num;
     LoginBussiness.verifyLogin();
     newProjectPage = new NewProjectPage();
     projectsPage = new ProjecstPage();
@@ -39,6 +41,7 @@ describe("Create new project ", () => {
 
   afterAll(() => {
     Constant.project_name_text_al = New_Project_Name;
+    Constant.dataset_name_text = New_CSV_Name;
     console.log("project name after update: " + Constant.project_name_text_al);
   });
 
@@ -46,18 +49,61 @@ describe("Create new project ", () => {
     await newProjectPage.navigateTo();
     await browser.waitForAngular();
     await newProjectPage.clickNewProjectBtn(PROJECT_TEXT_CLASSIFICATION);
-    await newProjectPage.setProjectName(New_Project_Name);
+    await newProjectPage.setProjectName(
+      New_Project_Name,
+      Constant.project_name_log
+    );
     await newProjectPage.setTaskInstruction(Task_Instruction);
     await newProjectPage.uploadCSV(New_CSV_Name, CSV_Path);
     await browser.wait(
       ExpectedConditions.visibilityOf(SET_DATA_SECTION),
       Constant.DEFAULT_TIME_OUT
     );
+    console.log("start to set label charactor that more than 50...");
+    await newProjectPage.selectMultipleTicketColumn(0, 2);
+    await newProjectPage.selectLabels(4);
+    await newProjectPage.setDataSubmit();
+    await newProjectPage.clickOkBtn();
+    console.log("succeed to set label charactor that more than 50...");
+
+    await newProjectPage.selectLabels(10);
+    await newProjectPage.setDataSubmit();
+
     await newProjectPage.setData("text");
-    await newProjectPage.setMaxAnnotation();
+    await newProjectPage.setLabelValidation(
+      projectCreateData.TextProject.duplicateLabelColumn
+    );
+    await newProjectPage.setLabelValidation(
+      projectCreateData.TextProject.categoryLabelColumn
+    );
+    await newProjectPage.setDataSubmit();
+    await newProjectPage.setLabelValidation(
+      projectCreateData.TextProject.labelColumn
+    );
+    await newProjectPage.setDataSubmit();
+    await newProjectPage.setMaxAnnotation(
+      projectCreateData.TextProject.maxAnnotation - 2
+    );
     await newProjectPage.setNewLable(New_Lable);
+    await newProjectPage.setDuplicateLable(
+      projectCreateData.TextProject.duplicateLabel
+    );
+    await newProjectPage.deleteLable(projectCreateData.TextProject.deleteLabel);
     await newProjectPage.selectActiveLearningModel(0);
-    await newProjectPage.setAssignee(Constant.username);
+    await newProjectPage.setAssignee(
+      Constant.username,
+      projectCreateData.TextProject.Annotator2
+    );
+    await newProjectPage.setDuplicateAnnotator(
+      projectCreateData.TextProject.Annotator
+    );
+    await newProjectPage.setAssignedTicket(
+      projectCreateData.TextProject.assignedTickets
+    );
+    await newProjectPage.deleteAnnotator();
+    await newProjectPage.setMaxAnnotation(
+      projectCreateData.TextProject.maxAnnotation
+    );
     await newProjectPage.clickCreateBtn();
     await projectsPage.waitForPageLoading();
     await browser.wait(

@@ -8,9 +8,11 @@ import { ProjecstPage } from "../page-object/projects-page";
 import { browser, by, element, $, $$ } from "protractor";
 const projectCreateData = require("../resources/project-create-page/test-data");
 const projectEditData = require("../resources/project-edit-page/test-data");
+import { CommonPage } from "../general/commom-page";
 
 describe("Enter projects tab...", () => {
   let projectsPage: ProjecstPage;
+  let commonPage: CommonPage;
   let since = require("jasmine2-custom-message");
   let project_name: string;
   let USER_CHART_FIRST_RECT = $$(".userChartBar g.bars rect");
@@ -25,6 +27,14 @@ describe("Enter projects tab...", () => {
   beforeAll(() => {
     LoginBussiness.verifyLogin();
     projectsPage = new ProjecstPage();
+    commonPage = new CommonPage();
+  });
+
+  it("Should change the page value successfully.", async (done) => {
+    await projectsPage.navigateTo();
+    await projectsPage.waitForPageLoading();
+    await commonPage.changePageValue(1);
+    done();
   });
 
   it("Should preview text al project, user and category charts should display normally.", async (done) => {
@@ -37,10 +47,14 @@ describe("Enter projects tab...", () => {
     console.log("Project_Count_After_Filter:::", Project_Count_After_Filter);
     console.log("Project_Name_Text:::", Project_Name_Text);
     if (Project_Name_Text !== "" || Project_Count_After_Filter > 0) {
+      await commonPage.toShowMoreAnnotators();
+      since("hidden annotators should show up with hide icon")
+        .expect(commonPage.HIDE_ICON.getText())
+        .toEqual("hide");
       await projectsPage.clickGridFirstCell();
       await projectsPage.waitForUserChartLoading();
       await projectsPage.waitForCategoryChartLoading();
-      await browser.sleep(1000);
+      await browser.sleep(10000);
       console.log("finish chart loading and sleeping");
       since("user chart rect should show up and have height")
         .expect(projectsPage.getChartRectHeight(USER_CHART_FIRST_RECT))
@@ -115,7 +129,9 @@ describe("Enter projects tab...", () => {
         projectEditData.LogProject.Filter_File_Name
       );
       let tableLengthBeforeReturn = await projectsPage.getTableLength();
-      console.log(9, tableLengthBeforeReturn);
+      console.log("tableLengthBeforeReturn", tableLengthBeforeReturn);
+      let aa = (await projectsPage.getTableTotalItems()).trim().split(" ")[4];
+      console.log("table total items", aa);
       // since("table total items should to be 3 after filter")
       //   .expect(
       //     Number((await projectsPage.getTableTotalItems()).trim().split(" ")[4])

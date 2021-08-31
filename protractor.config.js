@@ -22,6 +22,7 @@ var conf = {
     "./features/append-project-log-spec.ts",
     "./features/creat-text-project-spec.ts",
     "./features/annotate-project-buttons-spec.ts",
+    "./features/creat-tabular-project-spec.ts",
     "./features/creat-tabular-numeric-project-spec.ts",
     "./features/annotate-project-tabular-numeric-spec.ts",
     "./features/edit-project-spec.ts",
@@ -37,14 +38,13 @@ var conf = {
     "./features/append-project-image-spec.ts",
     "./features/project-preview-detail-spec.ts",
     "./features/datasets-preview-detail-spec.ts",
+    "./features/faq-spec.ts",
     "./features/delete-projects-spec.ts",
     "./features/delete-datasets-spec.ts",
   ],
 
-  specsConst: [
-    "./general/sign-up-external-spec.ts",
-    "./general/login-external-spec.ts",
-  ],
+  specsConst: ["./general/login-external-spec.ts"],
+
   poc_specs: [
     "./general/sign-up-external-spec.ts",
     "./general/login-external-spec.ts",

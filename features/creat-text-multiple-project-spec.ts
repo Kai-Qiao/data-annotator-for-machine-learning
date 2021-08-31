@@ -54,7 +54,9 @@ describe("Create new project ", () => {
       Constant.DEFAULT_TIME_OUT
     );
     await newProjectPage.setData("text");
-    await newProjectPage.setMaxAnnotation();
+    await newProjectPage.setMaxAnnotation(
+      projectCreateData.TextMultipleLabelsProject.maxAnnotation
+    );
     await newProjectPage.setNewLable(New_Lable);
     await newProjectPage.allowMultiple();
     await newProjectPage.setAssignee(Constant.username);

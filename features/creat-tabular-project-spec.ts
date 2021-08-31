@@ -10,15 +10,14 @@ import { ProjecstPage } from "../page-object/projects-page";
 const projectCreateData = require("../resources/project-create-page/test-data");
 
 describe("Create new project ", () => {
-  const Task_Instruction = projectCreateData.ImageProject.Instruction;
+  const Task_Instruction = projectCreateData.TabularProject.Instruction;
+  const New_Lable = projectCreateData.TabularProject.Labels.split(",");
   const SET_DATA_SECTION = $('ul[role="tablist"] .nav-item:last-child');
-  const PROJECT_NER_CLASSIFICATION = element(
-    by.css('clr-dropdown-menu a[href="/projects/create/image"]')
+  const PROJECT_TABULAR_CLASSIFICATION = element(
+    by.css('clr-dropdown-menu a[href="/projects/create/tabular"]')
   );
-  const CSV_Path = "/doc/upload-resource/image-test-data.zip";
 
   let New_Project_Name: string;
-  let New_CSV_Name: string;
   let Serial_Num: string;
   let newProjectPage: NewProjectPage;
   let projectsPage: ProjecstPage;
@@ -26,38 +25,40 @@ describe("Create new project ", () => {
 
   beforeAll(() => {
     Serial_Num = new Date().getTime().toString();
-    New_Project_Name = "e2e Test Project Image " + Serial_Num;
-    New_CSV_Name = "e2e Test Data Image" + Serial_Num;
-    Constant.project_name_image = New_Project_Name;
-    Constant.dataset_name_image = New_CSV_Name;
+    New_Project_Name = "e2e Test Project Tabular " + Serial_Num;
     LoginBussiness.verifyLogin();
     newProjectPage = new NewProjectPage();
     projectsPage = new ProjecstPage();
-    console.log("start to create image project : " + New_Project_Name);
+    console.log("start to create new tabular project : " + New_Project_Name);
   });
 
   afterAll(() => {
-    Constant.project_name_image = New_Project_Name;
-    Constant.dataset_name_image = New_CSV_Name;
-    console.log("project name after update: " + Constant.project_name_image);
+    Constant.project_name_tabular_al = New_Project_Name;
+    console.log(
+      "project name after update: " + Constant.project_name_tabular_al
+    );
   });
 
-  it("Should create image project successfully.", async (done) => {
+  it("Should create new tabular project successfully.", async (done) => {
     await newProjectPage.navigateTo();
     await browser.waitForAngular();
-    await newProjectPage.clickNewProjectBtn(PROJECT_NER_CLASSIFICATION);
-    await newProjectPage.uploadCSV(New_CSV_Name, CSV_Path);
-    await newProjectPage.imageLoaded();
-    await browser.sleep(5000);
-    await newProjectPage.navigateTo();
-    await browser.waitForAngular();
-    await newProjectPage.clickNewProjectBtn(PROJECT_NER_CLASSIFICATION);
+    await newProjectPage.clickNewProjectBtn(PROJECT_TABULAR_CLASSIFICATION);
     await newProjectPage.setProjectName(New_Project_Name);
     await newProjectPage.setTaskInstruction(Task_Instruction);
-    await newProjectPage.selectExistingFile(Constant.dataset_name_image);
-    await newProjectPage.setNewLable(
-      projectCreateData.ImageProject.Labels.split(",")
+    await newProjectPage.selectExistingFile(Constant.dataset_name_text);
+    await browser.wait(
+      ExpectedConditions.visibilityOf(SET_DATA_SECTION),
+      Constant.DEFAULT_TIME_OUT
     );
+    await newProjectPage.setData("tabular", 0, 3);
+    await newProjectPage.setMaxAnnotation(
+      projectCreateData.TabularProject.maxAnnotation
+    );
+    await newProjectPage.shiftLabelType();
+    await newProjectPage.setNewLable(New_Lable);
+    await newProjectPage.selectActiveLearningModel(1);
+    await newProjectPage.selectActiveLearningEncoder(0);
+    await newProjectPage.selectActiveLearningEncoder(1);
     await newProjectPage.setAssignee(Constant.username);
     await newProjectPage.clickCreateBtn();
     await projectsPage.waitForPageLoading();
@@ -75,13 +76,13 @@ describe("Create new project ", () => {
         .toBe(New_Project_Name);
       since("the data source should same as the user uploaded file")
         .expect(projectsPage.getCellText(2))
-        .toBe(projectCreateData.ImageProject.Source);
+        .toBe(projectCreateData.TabularProject.Source);
       since("the annotar should be the logged user")
         .expect(projectsPage.getAnnotatorCellText())
         .toContain(Constant.username);
       since("the labels should contain the user typed lable")
         .expect(projectsPage.getCellText(5))
-        .toContain(projectCreateData.ImageProject.Labels);
+        .toContain(New_Lable.join(","));
       since("should have 4 actions")
         .expect(projectsPage.getActionsCount())
         .toBe(5);
