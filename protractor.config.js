@@ -22,6 +22,7 @@ var conf = {
     "./features/append-project-log-spec.ts",
     "./features/creat-text-project-spec.ts",
     "./features/annotate-project-buttons-spec.ts",
+    "./features/append-project-spec.ts",
     "./features/creat-tabular-project-spec.ts",
     "./features/creat-tabular-numeric-project-spec.ts",
     "./features/annotate-project-tabular-numeric-spec.ts",
@@ -29,7 +30,6 @@ var conf = {
     "./features/annotate-project-dropdown-spec.ts",
     "./features/creat-text-multiple-project-spec.ts",
     "./features/annotate-project-multiple-spec.ts",
-    "./features/append-project-spec.ts",
     "./features/download-share-projects-spec.ts",
     "./features/creat-ner-labels-existing-project-spec.ts",
     "./features/annotate-project-ner-labels-existing-spec.ts",
@@ -43,17 +43,15 @@ var conf = {
     "./features/delete-datasets-spec.ts",
   ],
 
-  specsConst: ["./general/login-external-spec.ts"],
+  specsConst: [
+    "./general/sign-up-external-spec.ts",
+    "./general/logout-spec.ts",
+    "./general/login-external-spec.ts",
+  ],
 
   poc_specs: [
-    "./general/sign-up-external-spec.ts",
     "./general/login-external-spec.ts",
-    // "./features/creat-log-project-spec.ts",
-    // "./features/creat-text-project-spec.ts",
-    // "./features/creat-tabular-numeric-project-spec.ts",
-    // "./features/creat-text-multiple-project-spec.ts",
-    // "./features/creat-image-project-spec.ts",
-    // "./features/clear-old-e2e-projects-datasets-spec.ts",
+    "./features/clear-old-e2e-projects-datasets-spec.ts",
   ],
   specsAll: [],
 };
@@ -68,6 +66,7 @@ exports.config = {
       args: [
         "disable-dev-shm-usage",
         "window-size=1280,1024",
+        "lang=en-us",
         "ignore-certificate-errors",
         "ignore-ssl-errors",
         "no-sandbox",

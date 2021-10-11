@@ -32,7 +32,15 @@ describe("verify image project append funtion", () => {
   });
 
   it("File append verify selete existing file", async () => {
-    expect(await commonAppend.fileAppendSelectExistingFile(project_name))
+    expect(await commonAppend.fileAppendSelectExistingFile(project_name, Constant.dataset_name_image))
       .toBeTruthy;
   });
+
+  it('LOCAL file change and upload to append', async () => {
+    const FILE_1 = "/doc/upload-resource/image-test-data.zip";
+    const FILE_2 = "/doc/upload-resource/APPEND_IMAGES_BY_ZIP.zip";
+    const dataset_name = "e2e Test Data append image file" + Date.now();
+    expect(await commonAppend.localFileChangeAndUpload(project_name, dataset_name, FILE_1, FILE_2)).toBeTruthy;
+  })
+
 });

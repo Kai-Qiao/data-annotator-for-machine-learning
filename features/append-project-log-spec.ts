@@ -28,7 +28,15 @@ describe('verify log project append funtion', () => {
   })
 
   it('File append verify selete existing log file', async () => {
-    expect(await commonAppend.fileAppendSelectExistingFile(project_name)).toBeTruthy;
+    console.log('Constant.dataset_name_log', Constant.dataset_name_log);
+    expect(await commonAppend.fileAppendSelectExistingFile(project_name, Constant.dataset_name_log)).toBeTruthy;
+  })
+
+  it('LOCAL file change and upload to append', async () => {
+    const FILE_1 = "/doc/upload-resource/log-test-data.tgz";
+    const FILE_2 = "/doc/upload-resource/APPEND_LOGS_BY_ZIP.zip";
+    const dataset_name = "e2e Test Data append log file" + Date.now();
+    expect(await commonAppend.localFileChangeAndUpload(project_name, dataset_name, FILE_1, FILE_2)).toBeTruthy;
   })
 
 })

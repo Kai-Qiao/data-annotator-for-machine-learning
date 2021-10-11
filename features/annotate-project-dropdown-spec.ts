@@ -39,7 +39,7 @@ describe("annotate project ...", () => {
     await annotatePage.filterProjectName(project_name);
     let Project_Count_After_Filter = await projectsPage.getTableLength();
     let Project_Name_Text = await projectsPage.getCellText(0);
-    let Project_Labels = await projectsPage.getCellText(8);
+    let Project_Labels = await projectsPage.getCellText(4);
     if (
       (Project_Name_Text !== "" && Project_Labels.split(",").length > 6) ||
       Project_Count_After_Filter > 0
@@ -60,7 +60,9 @@ describe("annotate project ...", () => {
       // since("progress shoud show up and content correct")
       //   .expect(annotatePage.getProgress())
       //   .toEqual({
-      //     sessions: String(projectCreateData.TextProject.ticketSessions),
+      //     sessions: String(
+      //       projectCreateData.TextProject.defaultEvenlyDistributedTickets
+      //     ),
       //     annotations: "1",
       //   });
 
@@ -71,7 +73,9 @@ describe("annotate project ...", () => {
       // since("the progress annotations should increas 1")
       //   .expect(annotatePage.getProgress())
       //   .toEqual({
-      //     sessions: String(projectCreateData.TextProject.ticketSessions),
+      //     sessions: String(
+      //       projectCreateData.TextProject.defaultEvenlyDistributedTickets
+      //     ),
       //     annotations: "2",
       //   });
       since("the history list should increase 1")
