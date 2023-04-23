@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: nodeVersion
         run:
-          node -V
+          node --version
       - name: Checkout 
         uses: actions/checkout@v3
         with:
