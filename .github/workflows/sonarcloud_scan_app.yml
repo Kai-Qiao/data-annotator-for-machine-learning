@@ -41,10 +41,16 @@ jobs:
       - name: SonarCloud setup for annotation-app
         working-directory: ./devops/sonar
         run: python ./config_sonar_project.py -ProjectName ${{ env.SONAR_ORG }}-annotation-app -ProjectKey ${{ env.SONAR_ORG }}-annotation-app -OrgKey ${{ env.SONAR_ORG }} -QualityGateName angular-client-gate -QualityGateConditions ./quality_gates/angular-client.json -SonarToken ${{ secrets.SONAR_TOKEN }}
+      
       - name: Setup Node 16
         uses: actions/setup-node@v2
         with:
           node-version: "16"
+      
+      - name: nodeVersion
+        run:
+          node --version
+      
       - name: SonarCloud Scan annotation-app
         uses: sonarsource/sonarcloud-github-action@master  
         with:
@@ -58,6 +64,7 @@ jobs:
         env: 
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.DATA_GITHUB_TOKEN }}
+      
       - name: nodeVersion
         run:
           node --version
